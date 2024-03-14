@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-principal: #c3c5f1;
+    --cor-quartenaria: #ffffff;
+    --cor-quinaria: #d4d7ff;
+    --cor-secundaria: #d7d8f6;
+    --cor-sertima: #afb2ec;
+    --cor-sextiario: #ebecfa;
+    --cor-sombra: #00000056;
+    --cor-terciaria: #ebecfa;
+    --preto: #000;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-sertima);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding-top: 1%;
+    width: 100vw;
+}
+
+.texto {
+    color: var(--cor-quartenaria);
+    font-size: 12px;
+}
+
+.login {
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-login {
+    color: var(--cor-principal);
+    font-size: 23px;
+}
+
+.login-card {
+    align-items: center;
+    background-color: var(--cor-quinaria);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px var(--cor-sombra);
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    padding: 30px 35px;
+    width: 90%;
+}
+
+.login-card h1 {
+    color: var(--cor-quartenaria);
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.textfield {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.textfield > input {
+    background-color: var(--cor-quartenaria);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 100px var(--cor-sombra);
+    font-size: 12pt;
+    margin: 10px 0px;
+    outline: none;
+    padding: 16px;
+    width: 100%;
+}
+
+.botao {
+    background-color: var(--cor-quartenaria);
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.textfield>label {
+    color: var(--preto);
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 950px) {
+    .login {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login-card{
+        display: flex;
+        flex-direction:column;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .texto > h1 {
+        display: none;
+    }
+
+    .texto {
+        width: auto;
+        height: auto;
+        
+        
+    }
+    
+}
